@@ -46,7 +46,7 @@
                 <p>
                     <label for="puc-marks">PUC Marks Criteria (%):</label>
                     <input type="range" id="puc-marks" name="puc-marks" min="0" max="100" value="50" required>
-                    <span id="puc-marks-value">50</span>
+                    <span id="puc-marks-value">100</span>
                 </p>
                 <p>
                     <label for="course">Select the course you want to apply for:</label>
@@ -75,15 +75,5 @@
             </p>
         </form>
     </main>
-    
-    <!-- Add this script at the end of the <body> tag -->
-    <script>
-        const pucMarksSlider = document.getElementById('puc-marks');
-        const pucMarksValue = document.getElementById('puc-marks-value');
-        
-        pucMarksSlider.addEventListener('input', function() {
-            pucMarksValue.textContent = this.value;
-        });
-    </script>
 </body>
 </html>
